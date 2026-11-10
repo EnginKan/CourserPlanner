@@ -79,7 +79,7 @@ fun ProductView(model: ProductViewModel,
         }
         composable("detay/{id}",
             arguments = listOf(navArgument("id"){type=NavType.IntType})){
-            stack->ProductDetail(stack.arguments?.getInt("id")?:0,model)
+            stack->ProductDetail(stack.arguments?.getInt("id")?:100,model)
 
         }
     }
